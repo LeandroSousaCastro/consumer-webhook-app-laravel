@@ -1,25 +1,26 @@
 <center>
+  <h1 align="center">🚀 Simula um consumidor de web hook via GET ou POST</h1>
   <p align="center">
-    <img src="https://user-images.githubusercontent.com/20674439/158480514-a529b310-bc19-46a5-ac95-fddcfa4776ee.png" width="150"/>&nbsp;
-    <img src="https://icon-library.com/images/php-icon/php-icon-8.jpg"  width="150" />
-  </p>  
-  <h1 align="center">🚀 Microserviço: API Catálogo de Vídeos com PHP/Laravel</h1>
-  <p align="center">
-    Microserviço API de Catálogo de Vídeos, com PHP <br />
-    Projeto com TDD, Clean Arch, DDD e etc;
+    Microserviço API um consumidor de Webhooks, com PHP
   </p>
 </center>
+
+### Como usar?
+
+Você  realizar requisições via POST ou GET para o link /api/test, passando qualquer payload.
+
+Você pode verificar se o conteúdo do Webhook foi realmente recebido no link de acesso ao projeto. [http://localhost:81](http://localhost:81)
 
 ### Como rodar?
 
 Clone Repositório
 
 ```sh
-git clone -b laravel-starter-kit https://github.com/devfullcycle/FC3-api-de-videos-php fc-app-laravel
+git clone -b git@github.com:LeandroSousaCastro/consumer-webhook-app-laravel.git consumer-webhook-app
 ```
 
 ```sh
-cd fc-app-laravel
+cd consumer-webhook-app
 ```
 
 Crie o Arquivo .env
@@ -37,7 +38,7 @@ docker compose up -d
 Acesse o container app
 
 ```sh
-docker-compose exec app bash
+docker compose exec -it app bash
 ```
 
 Instale as dependências do projeto
